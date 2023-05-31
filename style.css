@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
 
+:root{
+    --color-fuente: #f7faf6;
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +18,10 @@ body{
     height: 100vh;
     /* backdrop-filter: blur(5px); */
     background-color: #181818;
-    background-image: url("https://c.wallhere.com/photos/77/d4/mountains_night-8822.png!d");
+    /* background-image: url("https://c.wallhere.com/photos/77/d4/mountains_night-8822.png!d"); */
+    /* background-image: url("https://c4.wallpaperflare.com/wallpaper/599/689/236/machine-dwayne-johnson-the-rock-workout-wallpaper-preview.jpg"); */
+    /* background-image: url("https://wallpaperaccess.com/full/6375161.jpg"); */
+    background: url("https://wallpaperaccess.com/full/1244909.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -25,7 +33,7 @@ li{
 }
 
 a{
-    color: #f7e1e1;
+    color: var(--color-fuente);
     font-size: 1rem;
     text-decoration: none;
 
@@ -62,7 +70,7 @@ header{
 }
 
 .navbar .toggle_btn{
-    color: #f2f2f2;
+    color: var(--color-fuente);
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
@@ -70,7 +78,7 @@ header{
 
 .action_btn{
     background-color: orange;
-    color: #f2f2f2;
+    color: var(--color-fuente);
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
@@ -83,7 +91,7 @@ header{
 
 .action_btn:hover{
     scale: 1.05;
-    color: #f2f2f2;
+    color: var(--color-fuente);
 
 }
 
@@ -101,7 +109,7 @@ header{
     height: 0;
     width: 300px;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(4px);
     border-radius: 10px;
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -134,13 +142,18 @@ section#hero{
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #f2f2f2;
+    color: var(--color-fuente);
 }
 
 #hero h1{
     font-size: 3rem;
     margin-bottom: 1rem;
     
+}
+
+#hero p{
+    font-size: 1.2rem;
+    color: orange;
 }
 
 
